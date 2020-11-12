@@ -11,7 +11,7 @@ import {MatTableDataSource} from '@angular/material/table';
 export class LeaderboardComponent implements OnInit {
 
   pool: any
-  columnsToDisplay = ['firstName', 'score'];
+  columnsToDisplay = ['nickname', 'score'];
 
   constructor(private leaderboardApi: LeaderboardApiService) { }
 

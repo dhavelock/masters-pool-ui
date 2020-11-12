@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LeaderboardApiService {
 
-  baseUrl = 'https://masters-pool.herokuapp.com/api/v1';
+  // baseUrl = 'https://masters-pool.herokuapp.com/api/v1';
+  baseUrl = 'http://localhost:5000/api/v1';
 
   constructor(private http: HttpClient) { }
 
