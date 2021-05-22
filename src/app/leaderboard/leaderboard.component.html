@@ -2,7 +2,7 @@
   <table mat-table [dataSource]="pool.leaderboard">
     <ng-container matColumnDef="score">
       <th mat-header-cell *matHeaderCellDef> Score </th>
-      <td mat-cell *matCellDef="let member"> {{member.score}} </td>
+      <td mat-cell *matCellDef="let member"> <span *ngIf="member.score>0">+</span>{{member.score}} </td>
     </ng-container>
     <ng-container matColumnDef="nickname">
       <th mat-header-cell *matHeaderCellDef> Name </th>
